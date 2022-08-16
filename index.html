@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-		<head>
-	    	<meta charset="utf-8">
-	    	<meta name="viewport" content="width=device-width">
-	    	<title> Homework 7. Member Sing In. </title>
-	    	<link rel="stylesheet" type="text/css" href="css/style.css">
-	    	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-		</head>
+	<head>
+	   	<meta charset="utf-8">
+	   	<meta name="viewport" content="width=device-width">
+	   	<title> Homework 7. Member Sing In. </title>
+	   	<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
 	<body>
 		<div class="cover">
         	<div class="container">
@@ -18,27 +17,25 @@
 						<h1>Member Sing In</h1>
 						<p>Not a member yet? <a href="#"> Sign up now</a></p>
 					</div>
-					<form class="form_content">
-						<label for="user_name">
+					<form class="form_content" action="#" method="post" enctype="multipart/form-data">
+						<div class="user_name">
 							<span class="icon_user"></span>
-							<input type="text" id="user_name" class="username" placeholder="Username / Email" required>
-						</label>
-						<label for="user_pass">
+							<input type="text" class="username" placeholder="Username / Email">
+						</div>
+						<div class="user_pass">
 							<span class="icon_pass"></span>
-							<input type="password" id="user_pass" class="pass" placeholder="Password" required>
+							<input type="password" class="pass" placeholder="Password">
 							<span class="eye_closed"></span>
-						</label>
-					</form>
-					<div class="action">
-						<div>
+						</div>
+						<div class="action">
 							<button type="submit"  class="sign" name="sign_btn" >Sign In</button>
+							<div class="checkbox">
+								<input type="checkbox" id="checkbox" class="checkbox_input" checked>
+								<label for="checkbox" class="checkbox_label">Remeber me</label>
+								<a href="#" class="forgot">Forgot Password?</a>
+							</div>
 						</div>
-						<div class="checkbox">
-							<input type="checkbox" id="checkbox" class="checkbox_input" checked>
-							<label for="checkbox" class="checkbox_label">Remeber me</label>
-							<a href="#" class="forgot">Forgot Password?</a>
-						</div>
-					</div>
+					</form>	
 				</main>
 				<footer class="footer">
 					<p class="before">designed by</p>

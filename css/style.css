@@ -35,12 +35,10 @@ img {vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 @font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-Regular.ttf');
-    src: local('OpenSans-Regular'), local('OpenSans-Regular'),
-        url('../fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 body {
 	font-family: "OpenSans", serif;
@@ -48,10 +46,9 @@ body {
 .cover {
 	max-width: 500px;
 	height: 500px;
-	margin: 0 auto;
 	background: url(../img/background.png);
 	background-size: cover;
-	margin-top: 50px;
+	margin: 50px auto 0 auto;
  	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -96,46 +93,53 @@ body {
 	color: #ffffff;
 }
 .form_content {
-	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.user_name {
+	display: flex;
+	align-items: center;
+	height: 45px;
+	margin: 0 37px;
+	margin-top: 10px;
 }
 .username {
-	margin: 10px 0 0 82px;
 	width: 245px;
 	height: 45px;
 	padding-left: 20px;
 	background-color: #ffffff;
 }
 .icon_user {
-	top: 10px;
-	left: 37px;
 	width: 45px;
 	height: 45px;
-	position: absolute;
 	content: "";
 	background: url("../img/Login.png") 50%/50% no-repeat;
 	background-color: #e65848;
 }
+.user_pass {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 0 37px;
+	margin-top: 15px;
+}
 .pass {
-	margin: 15px 0 0 82px;
 	width: 245px;
 	height: 45px;
 	background-color: #ffffff;
 	padding-left: 20px;
 }
 .icon_pass {
-	top: 70px;
-	left: 37px;
 	width: 45px;
 	height: 45px;
-	position: absolute;
 	content: "";
 	background: url("../img/Password.png") 50%/50% no-repeat;
 	background-color: #e65848;
 }
 .eye_closed {
 	position: absolute;
-	left: 270px;
-	bottom: 8px;
+	left: 230px;
+	bottom:8px;
 	background: url(../img/Eye.png) 100%/80% no-repeat;
 	width: 40px;
 	height: 30px;
@@ -145,6 +149,11 @@ input::placeholder {
 	font-size: 15px;
 	color: #c4c4c4;
 }
+.action {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-around;
+}
 .sign {
 	color: #ffffff;
 	font-size: 22px;
@@ -152,11 +161,6 @@ input::placeholder {
 	width: 137px;
 	height: 45px;
 	background-color: #e65848;
-}
-.action {
-	display: flex;
-	margin-top: 30px;
-	justify-content: space-around;
 }
 .checkbox {
 	display: flex;
